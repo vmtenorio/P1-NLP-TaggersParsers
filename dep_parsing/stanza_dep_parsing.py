@@ -66,7 +66,7 @@ stanza_en_eval = load_conllu(f_stanza_en)
 stanza_en_evaluation = evaluate(gold_en_eval, stanza_en_eval)
 
 print_results(stanza_en_evaluation,
-              "Results for Dependency Treebank dataset using Stanza Dependency Parser")
+              "Results for Penn Treebank dataset using Stanza Dependency Parser")
 
 # Spanish
 spanish_dep_file = '../../dependency/UD_Spanish-AnCora-master/es_ancora-ud-test.conllu'

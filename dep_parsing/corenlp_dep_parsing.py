@@ -62,7 +62,7 @@ gold_en_eval = load_conllu(f_gold_en)
 corenlp_en_evaluation = evaluate(gold_en_eval, corenlp_en_eval)
 
 print_results(corenlp_en_evaluation,
-              "Results for Dependency Treebank dataset using CoreNLP Dependency Parser")
+              "Results for Penn Treebank dataset using CoreNLP Dependency Parser")
 
 # Spanish
 spanish_dep_file = '../../dependency/UD_Spanish-AnCora-master/es_ancora-ud-test.conllu'
