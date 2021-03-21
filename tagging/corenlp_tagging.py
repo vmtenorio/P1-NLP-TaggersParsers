@@ -36,8 +36,7 @@ macbeth_corenlp_tags = []
 with CoreNLPClient(
         annotators=['tokenize,pos'],
         timeout=30000,
-        endpoint='http://localhost:9001',
-        properties={'annotators': 'tokenize,pos'}) as client:
+        endpoint='http://localhost:9001') as client:
     # Doing in a loop to keep the same number of tokens
     for w in macbeth_words:
         corenlp_model = client.annotate(w)
